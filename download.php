@@ -87,7 +87,7 @@ echo "Input option number: ";
 $input = trim(fgets(STDIN));
 
 @mkdir($base_path);
-$file_name = $video_id . '_' . $qualities[$input]['bandwidth'];
+$file_name = $title;
 $video_file = $base_path . $file_name . '.mp4';
 if (isset($proxy) && $proxy) {
     $cmd_proxy = '-http_proxy http://' . $proxy;
